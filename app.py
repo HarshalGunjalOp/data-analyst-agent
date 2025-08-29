@@ -565,7 +565,7 @@ def run_agent_safely(llm_input: str) -> Dict:
 
 from fastapi import Request
 
-@app.post("/api")
+@app.post("/aianalyst/")
 async def analyze_data(request: Request):
     try:
         form = await request.form()
