@@ -230,7 +230,7 @@
           formData.append('questions_file', this.qFileInput.files[0]);
           if (this.dFileInput.files[0]) formData.append('data_file', this.dFileInput.files[0]);
 
-          const response = await fetch('/api', { method:'POST', body:formData }); // changed endpoint
+          const response = await fetch('/aianalyst/', { method:'POST', body:formData }); // changed endpoint
 
           if (!response.ok) {
             let msg = `HTTP ${response.status}`;
